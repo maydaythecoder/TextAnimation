@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    background-color: #d9d0e3;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title {
+    position: absolute;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 600;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#MainTitle {
+    z-index: 1;
+    color: #ffffff;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#SubTitleOne {
+    z-index: 0;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #c33f3f;
+    transition: none;
+}
+
+#SubTitleOne.resetting {
+    transition: all 0.5s ease-in-out;
+    transition-delay: 0.01s;
+}
+
+#SubTitleTwo {
+    z-index: -1;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #3f85c3;
+    transition: none;
+}
+
+#SubTitleTwo.resetting {
+    transition: all 0.5s ease-in-out;
+    transition-delay: 0.02s;
+}
+
+#SubTitleThree {
+    z-index: -2;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffd700;
+    transition: none;
+}
+
+#SubTitleThree.resetting {
+    transition: all 0.5s ease-in-out;
+    transition-delay: 0.03s;
+}
